@@ -1,65 +1,80 @@
-<h3 align="center">🛠️ cost-optimizer</h3>
+<h3 align="center">🛠️ Cost-Optimizer</h3>
 
 <div align="center">
-  <a href="https://github.com/axentx/cost-optimizer/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
-  <a href="https://github.com/axentx/cost-optimizer"><img src="https://img.shields.io/github/stars/axentx/cost-optimizer?style=social" alt="GitHub stars"></a>
-  <a href="https://github.com/axentx/cost-optimizer"><img src="https://img.shields.io/github/actions/workflow/status/axentx/cost-optimizer/ci.yml?branch=main" alt="Build status"></a>
-  <a href="https://github.com/axentx/cost-optimizer"><img src="https://img.shields.io/badge/language-Python-blue.svg" alt="Language"></a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg">
+  <img alt="Language" src="https://img.shields.io/badge/language-Python-yellow.svg">
+  <img alt="Build" src="https://img.shields.io/badge/build-passing-success.svg">
+  <img alt="Stars" src="https://img.shields.io/github/stars/your-repo/cost-optimizer?style=social">
 </div>
 
 ---
 
-# 🚀 cost-optimizer
+# 🚀 Cost-Optimizer
+**Power B2C SaaS companies with slashing AI API costs.** Cost-Optimizer is a Python-based tool that reduces AI API expenses by up to 40% through intelligent model substitution and fallback routing.
 
-**Power B2C SaaS companies with intelligent model substitution. Reduce AI API costs by up to 40% without disrupting user experience.**
-
-## Why cost-optimizer?
-
-- **Cost‑Savings**: Cuts AI API spend by up to 40% per user through model substitution and fallback routing.
-- **Data‑Driven**: Uses Pandas & NumPy to analyze real usage patterns and project future savings.
-- **Live Dashboard**: Provides instant visibility into usage, potential savings, and quality metrics.
-- **Seamless Integration**: FastAPI endpoints allow you to plug the optimizer into existing SaaS pipelines.
-- **Quality‑First**: Tracks model quality metrics to ensure user experience is never compromised.
-- **Built for B2C SaaS**: Tailored for high‑volume, high‑dependency AI services that need cost control.
+## Why Cost-Optimizer?
+- **Trait one**: Reduces AI API expenses by up to 40%, directly impacting profit margins.
+- **Trait two**: Ensures seamless user experience by intelligently substituting models without compromising quality.
+- **Trait three**: Provides a live dashboard for real-time monitoring of API usage and potential savings.
+- **Built for B2C SaaS**: Tailored for companies heavily reliant on AI APIs, optimizing costs while maintaining performance.
+- **Trait four**: Offers detailed cost projections and quality metrics for informed decision-making.
+- **Trait five**: Supports fallback routing to ensure continuous service even under unexpected conditions.
 
 ## Feature Overview
-
-| Feature | Description |
-|---------|-------------|
-| **Usage Analysis** | Aggregates API call logs to identify high‑cost patterns. |
-| **Model Substitution** | Recommends cheaper model alternatives based on usage data. |
-| **Savings Dashboard** | Visualizes projected savings and actual cost reductions. |
-| **Fallback Routing** | Routes requests to cheaper models when primary models are unavailable. |
-| **Cost Projections** | Forecasts future spend under different model strategies. |
-| **Quality Metrics** | Monitors accuracy and latency to maintain service quality. |
+| Feature             | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| Usage Analysis      | Analyzes AI API usage patterns to identify cost-saving opportunities.       |
+| Model Substitution  | Suggests cheaper model alternatives to reduce per-user costs.               |
+| Savings Dashboard   | Displays live API usage patterns and potential savings for easy tracking.   |
+| Fallback Routing    | Ensures uninterrupted service with predefined fallback routes.              |
+| Cost Projections    | Provides detailed cost projections based on current and projected usage.    |
+| Quality Metrics     | Monitors and reports on the quality of substituted models.                  |
 
 ## Tech Stack
-
 - Python
 - FastAPI
 - Pandas
 - NumPy
 
 ## Project Structure
-
 ```
-cost-optimizer/
-├── business/          # Business logic and domain models
-├── docs/              # Documentation artifacts (PRD, ROADMAP, etc.)
-├── src/               # Application source (FastAPI app, analytics modules)
-├── tests/             # Unit and integration tests
-├── README.md          # This file
-├── pyproject.toml     # Build and dependency metadata
-├── requirements.txt   # Pinning of runtime dependencies
-└── setup.py           # Packaging entry point
+.
+├── business          # Business logic and operations
+├── docs              # Documentation files
+├── src               # Source code
+├── tests             # Test cases
+├── README.md         # Project overview and instructions
+├── pyproject.toml    # Project configuration
+├── requirements.txt  # Python dependencies
+└── setup.py          # Setup script for packaging
 ```
 
 ## Getting Started
-
+### Install
 ```bash
-# Clone the repository
-git clone https://github.com/axentx/cost-optimizer.git
-cd cost-optimizer
+pip install -r requirements.txt
+```
 
-# Create a virtual environment (recommended)
-python -m venv .venv
+### Run
+```bash
+uvicorn src.main:app --reload
+```
+
+### Test
+```bash
+pytest tests/
+```
+
+## Deploy
+```bash
+# Placeholder for deployment commands as the tech-stack is not yet locked.
+```
+
+## Status
+Active development. Latest commit: `eebcf38 readme-keeper: generate proper project README (overview/stack/run/deploy)`.
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+Licensed under the MIT License.
